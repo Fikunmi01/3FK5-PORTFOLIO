@@ -13,7 +13,7 @@ export const Cta= ()=> {
                     </button>
                 </div>
                 <div>
-                    <img src="./src/assets/Humaans.png" alt="" />
+                    <img src="/assets/Humaans.png" alt="" />
                 </div>
             </div>
         </div>

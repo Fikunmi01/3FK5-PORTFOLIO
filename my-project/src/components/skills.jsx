@@ -2,12 +2,12 @@ import React from "react";
 
 export const Skills = () => {
   const cardArray = [
-    { imgSrc: "./src/assets/react.svg", title: "ReactJS", id: 1 },
-    { imgSrc: "./src/assets/tailwindLogo.png", title: "TailwindCSS", id: 2 },
-    { imgSrc: "./src/assets/githubLogo.png", title: "Github", id: 3 },
-    { imgSrc: "./src/assets/typescriptLogo.png", title: "Typescript", id: 4 },
-    { imgSrc: "./src/assets/reduxLogo.png", title: "Redux", id: 5 },
-    { imgSrc: "./src/assets/angularLogo.png", title: "Angular", id: 6 },
+    { imgSrc: "/assets/react.svg", title: "ReactJS", id: 1 },
+    { imgSrc: "/assets/tailwindLogo.png", title: "TailwindCSS", id: 2 },
+    { imgSrc: "/assets/githubLogo.png", title: "Github", id: 3 },
+    { imgSrc: "/assets/typescriptLogo.png", title: "Typescript", id: 4 },
+    { imgSrc: "/assets/reduxLogo.png", title: "Redux", id: 5 },
+    { imgSrc: "/assets/angularLogo.png", title: "Angular", id: 6 },
   ];
   return (
     <>

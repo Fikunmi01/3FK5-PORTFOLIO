@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <div className="lg:py-20 lg:px-24 bg-[#e3f0fc] font-kalam">
         <div className="text-center">
-          <h2 className="text-4xl font-bold">Contact Me</h2>
+          <h2 className="text-4xl font-bold pt-5">Contact Me</h2>
           <p className="text-xl text-[rgba(0,0,0,.7)]">Get in touch</p>
         </div>
 

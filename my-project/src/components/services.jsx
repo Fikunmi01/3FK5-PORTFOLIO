@@ -24,7 +24,7 @@ export const Services = () => {
           </div>
 
           <div className=" relative lg:w-96 lg:h-96 w-full rounded-2xl">
-            <img src="./src/assets/lottieAnimation.svg" className="" alt="" />
+            <img src="/assets/lottieAnimation.svg" className="" alt="" />
           </div>
         </div>
       </div>

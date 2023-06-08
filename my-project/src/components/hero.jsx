@@ -36,7 +36,7 @@ export const Hero = () => {
           </div>
         </div>
         <div>
-          <img src="./src/assets/heroImg.png" alt="" />
+          <img src="/assets/heroImg.png" alt="" />
         </div>
       </div>
     </>

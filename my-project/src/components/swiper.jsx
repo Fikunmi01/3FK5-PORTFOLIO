@@ -13,7 +13,7 @@ import { Navigation } from "swiper";
 export const portfolioData = [
   {
     id: 0,
-    img: "./src/assets/portfolioImg1.jpg",
+    img: "/assets/portfolioImg1.jpg",
     title: "Modern Website",
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions for a travel booking website for easy bookings and accomodations",
@@ -21,7 +21,7 @@ export const portfolioData = [
   },
   {
     id: 1,
-    img: "./src/assets/portfolioImg2.jpg",
+    img: "/assets/portfolioImg2.jpg",
     title: "Travel Website",
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions",
@@ -29,7 +29,7 @@ export const portfolioData = [
   },
   {
     id: 2,
-    img: "./src/assets/portfolioImg3.jpg",
+    img: "/assets/portfolioImg3.jpg",
     title: "Real estate",
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions",
