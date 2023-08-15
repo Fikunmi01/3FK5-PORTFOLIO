@@ -52,7 +52,7 @@ export default function Swiperslide() {
 
               <span>
                 <h3 className="text-4xl leading-loose text-[#000] font-bold">{portfolio.title}</h3>
-                <p className="text-2xl text-[#000] mb-10">{portfolio.jobDescription}</p>
+                <p className="text-2xl text-[#000] mb-10 pb-2">{portfolio.jobDescription}</p>
                 <button className="px-5 rounded-xl bg-[#102438] text-white py-3 text-xl boxShadow">
                   Demo <i className="uil uil-arrow-right"></i>{" "}
                 </button>
