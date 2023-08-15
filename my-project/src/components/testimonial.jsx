@@ -6,7 +6,7 @@ import { register } from "swiper/element/bundle";
 register();
 // Import Swiper styles
 import "swiper/css";
-import 'swiper/css/pagination'
+import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
@@ -16,39 +16,31 @@ export default function Testimonial() {
   const review = [
     {
       id: 0,
-      name: "Sarah Williams",
+      name: "Abiodun",
+      client:'Marketing Manager',
       review:
-        "I get a good impression, I carry out my project with the best possible quality and attention and support 24hours a day. They offer the best quality you can get.",
+        "Fikunmi is a true professional who understands the importance of user experience and pixel-perfect designs. He delivered our project on time, and the result was a visually stunning and highly functional website. I highly recommend his services. ",
     },
     {
       id: 1,
-      name: "John Agnes",
+      name: "Yinka",
+      client:'Small-scale Entrepreneur',
       review:
-        "I get a good impression, I carry out my project with the best possible quality and attention and support 24hours a day",
+        "I've worked with several front-end developers in the past, but Fikunmi stands out from the rest. His ability to translate our ideas into a seamless user interface was impressive. They have a keen eye for design and a deep understanding of modern web technologies. It was a pleasure collaborating with him.",
     },
     {
       id: 2,
-      name: "Bola Sobowale",
+      name: "Peter Aondofar",
+      client:'Real Estate Agent',
       review:
-        "I get a good impression, I carry out my project with the best possible quality and attention and support 24hours a day",
+        "Working with Fikunmi was an absolute pleasure. Their attention to detail and commitment to delivering exceptional front-end solutions are commendable. They brought our vision to life and exceeded our expectations. Highly recommended!",
     },
     {
       id: 3,
-      name: "Michael Clayfield",
+      name: "Rogers Anyim ",
+      client:'Startup Founder',
       review:
-        "I get a good impression, I carry out my project with the best possible quality and attention and support 24hours a day",
-    },
-    {
-      id: 4,
-      name: "John Austin",
-      review:
-        "I get a good impression, I carry out my project with the best possible quality and attention and support 24hours a day",
-    },
-    {
-      id: 5,
-      name: "Nico Williams",
-      review:
-        "I get a good impression, I carry out my project with the best possible quality and attention and support 24hours a day",
+        "Fikunmi is an exceptional frontend developer who consistently delivers top-notch results. He is reliable, responsive, and highly skilled in his craft. His ability to optimize performance and create intuitive user experiences is remarkable. I wouldn't hesitate to work with him again in the future.",
     },
   ];
   return (
@@ -60,14 +52,19 @@ export default function Testimonial() {
         </div>
 
         <>
-          <Swiper navigation={true} pagination={{dynamicBullets: true}} modules={[Navigation, Pagination]} className="lg:w-3/5 rounded-xl mt-10 bg-[#e3f0fc] boxShadow">
+          <Swiper
+            navigation={true}
+            pagination={{ dynamicBullets: true }}
+            modules={[Navigation, Pagination]}
+            className="lg:w-3/5 rounded-xl mt-10 bg-[#e3f0fc] boxShadow"
+          >
             {review.map((review, i) => (
               <div key={review.id}>
                 <SwiperSlide key={review.id} className="lg:px-10 p-5 lg:py-10">
                   <div>
                     <p className="text-2xl leading-loose">{review.name}</p>
 
-                    <p className="text-xl leading-loose">Client</p>
+                    <p className="text-xl leading-loose">{review.client}</p>
 
                     <p className="text-lg">{review.review}</p>
                   </div>

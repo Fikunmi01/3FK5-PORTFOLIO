@@ -11,15 +11,18 @@ export const Services = () => {
 
         <div className="flex flex-col-reverse lg:flex-row gap-14 items-center justify-center px-3 mt-10 lg:mt-0">
           <div className="lg:w-3/5">
-            <h1 className="text-4xl text-[#102438] font-bold leading-normal">What I can do for you</h1>
+            <h1 className="text-4xl text-[#102438] font-bold leading-normal">
+              What I can do for you
+            </h1>
             <p className="text-[rgba(0,0,0,.7)] text-xl">
-              Your business will lose significant amounts of money when your
-              customers have poor experiences with your products. This can occur
-              due to poorly optimized and unresponsive web interfaces. Moreover,
-              in today's digital age, it's essential for your business to have a
-              strong online presence. Unfortunately, if potential customers
-              can't easily find you online, your business may suffer even
-              greater financial losses.
+              Engineering Excellence: With expertise in JavaScript and a focus
+              on performance and scalability, I deliver fast and resilient
+              solutions that can handle any scale.{" "}
+            </p>
+            <p className="text-[rgba(0,0,0,.7)] text-xl">
+              Exceptional User Experiences: I prioritise creating interfaces
+              that are intuitive, accessible, and optimised for an outstanding
+              user journey.
             </p>
           </div>
 
