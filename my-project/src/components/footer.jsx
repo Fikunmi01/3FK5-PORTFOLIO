@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="relative min-h-full">
       <div className="bg-[#102438] font-kalam flex justify-between px-3 py-8 lg:px-20 lg:py-16 items-center">
         <div className="flex flex-col gap-10">
-          <h2 className="text-white text-3xl lg:text-4xl">3FK5</h2>
+          <h2 className="text-white text-3xl lg:text-4xl font-logo">3FK5</h2>
           <p className="text-white text-lg lg:text-2xl">Frontend Developer</p>
         </div>
 

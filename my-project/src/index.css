@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 .font-kalam {
+  /* font-family: "Kalam", cursive; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-logo{
   font-family: "Kalam", cursive;
 }
 
