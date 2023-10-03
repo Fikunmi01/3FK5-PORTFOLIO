@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // import required modules
-import { Navigation } from "swiper";
+// import { Navigation,Pagination } from "swiper";
 
 export const portfolioData = [
   {
@@ -41,8 +41,9 @@ export default function Swiperslide() {
   return (
     <>
       <swiper-container
-        navigation={true}
-        modules={[Navigation]}
+        // navigation={true}
+        
+        // modules={[Navigation]}
         className="mySwiper"
       >
         {portfolioData.map((portfolio, i) => (
