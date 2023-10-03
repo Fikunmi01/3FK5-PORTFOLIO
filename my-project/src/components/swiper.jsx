@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
 // import required modules
-// import { Navigation,Pagination } from "swiper";
+import { Navigation,Pagination } from "swiper";
 
 export const portfolioData = [
   {
