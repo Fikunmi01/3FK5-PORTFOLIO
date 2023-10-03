@@ -42,9 +42,9 @@ export default function Swiperslide() {
   return (
     <>
       <swiper-container
-        // navigation={true}
+        navigation={true}
 
-        // modules={[Navigation]}
+        modules={[Navigation]}
         className="mySwiper"
       >
         {portfolioData.map((portfolio, i) => (

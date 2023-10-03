@@ -1,7 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+
+try {
+  const message = await client.sendAsync({
+    text: "i hope this works",
+    from: "you <username@your-email.com>",
+    to: "someone <someone@your-email.com>, another <another@your-email.com>",
+    cc: "else <else@your-email.com>",
+    subject: "testing emailjs",
+  });
+  console.log(message);
+} catch (err) {
+  console.error(err);
+}
 
 export default function Contact() {
-  
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    project: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <>
       <div className="lg:py-20 lg:px-24 bg-[#e3f0fc] font-kalam">
@@ -18,8 +45,12 @@ export default function Contact() {
               </div>
 
               <div>
-                <h3 className="text-lg lg:text-xl text-[#102438] font-bold">Call Me</h3>
-                <p className="text-lg lg:text-xl text-[#9FA1AD]">2348075332918</p>
+                <h3 className="text-lg lg:text-xl text-[#102438] font-bold">
+                  Call Me
+                </h3>
+                <p className="text-lg lg:text-xl text-[#9FA1AD]">
+                  2348075332918
+                </p>
               </div>
             </div>
 
@@ -29,7 +60,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <h3 className="text-lg lg:text-xl font-bold text-[#102438]">Email</h3>
+                <h3 className="text-lg lg:text-xl font-bold text-[#102438]">
+                  Email
+                </h3>
                 <p className="text-lg lg:text-xl text-[#9FA1AD]">
                   fikunmiadekunle@gmail.com
                 </p>
@@ -42,16 +75,16 @@ export default function Contact() {
               </div>
 
               <div>
-                <h3 className="font-bold text-[#102438] text-lg lg:text-xl">Location</h3>
-                <p className="text-lg lg:text-xl text-[#9FA1AD]">
-                  Akure
-                </p>
+                <h3 className="font-bold text-[#102438] text-lg lg:text-xl">
+                  Location
+                </h3>
+                <p className="text-lg lg:text-xl text-[#9FA1AD]">Akure</p>
               </div>
             </div>
           </div>
 
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-10 flex flex-col lg:flex lg:flex-row gap-5 lg:gap-6 lg:items-center">
                 <input
                   type="text"
