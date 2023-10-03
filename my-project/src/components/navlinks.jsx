@@ -35,28 +35,28 @@ export default function Navlinks() {
           <Link to="section2" spy={true} smooth={true} duration={500}>
             Skills
           </Link>
-          <i className="uil uil-user lg:hidden"></i>
+          <i className="uil uil-file-alt lg:hidden"></i>
         </li>
 
         <li className="flex flex-col-reverse text-center cursor-pointer">
           <Link to="section3" spy={true} smooth={true} duration={500}>
             Services
           </Link>
-          <i className="uil uil-user lg:hidden"></i>
+          <i className="uil uil-briefcase-alt lg:hidden"></i>
         </li>
 
         <li className="flex flex-col-reverse text-center cursor-pointer">
           <Link to="section4" spy={true} smooth={true} duration={500}>
             Portfolio
           </Link>
-          <i className="uil uil-user lg:hidden"></i>
+          <i className="uil uil-scenery lg:hidden"></i>
         </li>
 
         <li className="flex flex-col-reverse text-center cursor-pointer">
           <Link to="section5" spy={true} smooth={true} duration={500}>
             Contact Me
           </Link>
-          <i className="uil uil-user lg:hidden"></i>
+          <i className="uil uil-message lg:hidden"></i>
         </li>
       </ul>
     </>
