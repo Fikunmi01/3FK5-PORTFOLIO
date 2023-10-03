@@ -84,7 +84,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit}>
+            <form >
               <div className="mb-10 flex flex-col lg:flex lg:flex-row gap-5 lg:gap-6 lg:items-center">
                 <input
                   type="text"
