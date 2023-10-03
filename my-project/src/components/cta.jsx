@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
 
 export const Cta = () => {
   return (
@@ -13,7 +22,10 @@ export const Cta = () => {
             collaborate to bring your ideas to life.
           </p>
           <button className="boxShadow px-3 rounded-xl bg-[#102438] flex gap-2 text-white text-sm py-3 lg:text-xl lg:py-4">
-            Contact Me
+            {/* Contact Me */}
+            <Link to="section7" spy={true} smooth={true} duration={500}>
+              Contact Me
+            </Link>
             <i className="uil uil-navigator lg:text-xl"></i>
           </button>
         </div>
