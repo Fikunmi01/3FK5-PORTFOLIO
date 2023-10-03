@@ -43,7 +43,6 @@ export default function Swiperslide() {
     <>
       <swiper-container
         navigation={true}
-
         modules={[Navigation]}
         className="mySwiper"
       >

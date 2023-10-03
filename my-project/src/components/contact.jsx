@@ -1,33 +1,69 @@
 import React, { useState } from "react";
+// import SMTPClient from "emailjs-smtp-client"; '
 
-try {
-  const message = await client.sendAsync({
-    text: "i hope this works",
-    from: "you <username@your-email.com>",
-    to: "someone <someone@your-email.com>, another <another@your-email.com>",
-    cc: "else <else@your-email.com>",
-    subject: "testing emailjs",
-  });
-  console.log(message);
-} catch (err) {
-  console.error(err);
-}
+// const client = new SMTPClient({
+//   user: "fikunmi",
+//   password: "password",
+//   host: "fikunmiadekunle@gmail.com",
+//   ssl: true,
+// });
+
+// try {
+//   const message = await client.sendAsync({
+//     text: "i hope this works",
+//     from: "you <username@your-email.com>",
+//     to: "someone <someone@your-email.com>, another <another@your-email.com>",
+//     cc: "else <else@your-email.com>",
+//     subject: "testing emailjs",
+//   });
+//   console.log(message);
+// } catch (err) {
+//   console.error(err);
+// }
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    project: "",
-    message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   project: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   // Create a new instance of SMTPClient with your SMTP settings
+  //   const client = new SMTPClient({
+  //     user: "user",
+  //     password: "password",
+  //     host: "smtp.fikunmiadekunle@gmail.com",
+  //     ssl: true,
+  //   });
+
+  //   try {
+  //     const message = await client.sendAsync({
+  //       text: `Name: ${formData.name}\nEmail: ${formData.email}\nProject: ${formData.project}\nMessage: ${formData.message}`,
+  //       from: "you <username@your-email.com>",
+  //       to: "someone <someone@your-email.com>, another <another@your-email.com>",
+  //       cc: "else <else@your-email.com>",
+  //       subject: "Contact Form Submission",
+  //     });
+  //     console.log("Email sent successfully:", message);
+
+  //     // Clear the form after successful submission
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       project: "",
+  //       message: "",
+  //     });
+
+  //     alert("Message sent successfully!");
+  //   } catch (err) {
+  //     console.error("Error sending email:", err);
+  //     alert("Failed to send message. Please try again later.");
+  //   }
+  // };
 
   return (
     <>
@@ -90,6 +126,8 @@ export default function Contact() {
                   type="text"
                   className="p-3 rounded-lg lg:w-72 outline-none"
                   placeholder="Name"
+                  // value={formData.name}
+                  // onChange={handleChange}
                 />
                 <input
                   type="email"
