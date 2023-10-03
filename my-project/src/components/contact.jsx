@@ -1,69 +1,24 @@
 import React, { useState } from "react";
-// import SMTPClient from "emailjs-smtp-client"; '
-
-// const client = new SMTPClient({
-//   user: "fikunmi",
-//   password: "password",
-//   host: "fikunmiadekunle@gmail.com",
-//   ssl: true,
-// });
-
-// try {
-//   const message = await client.sendAsync({
-//     text: "i hope this works",
-//     from: "you <username@your-email.com>",
-//     to: "someone <someone@your-email.com>, another <another@your-email.com>",
-//     cc: "else <else@your-email.com>",
-//     subject: "testing emailjs",
-//   });
-//   console.log(message);
-// } catch (err) {
-//   console.error(err);
-// }
-
 export default function Contact() {
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   project: "",
-  //   message: "",
-  // });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    project: "",
+    message: "",
+  });
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleChange = (e) => {
+    // const { name, value } = e.target;
+    setFormData({
+      ...formData,
+    });
+  };
 
-  //   // Create a new instance of SMTPClient with your SMTP settings
-  //   const client = new SMTPClient({
-  //     user: "user",
-  //     password: "password",
-  //     host: "smtp.fikunmiadekunle@gmail.com",
-  //     ssl: true,
-  //   });
-
-  //   try {
-  //     const message = await client.sendAsync({
-  //       text: `Name: ${formData.name}\nEmail: ${formData.email}\nProject: ${formData.project}\nMessage: ${formData.message}`,
-  //       from: "you <username@your-email.com>",
-  //       to: "someone <someone@your-email.com>, another <another@your-email.com>",
-  //       cc: "else <else@your-email.com>",
-  //       subject: "Contact Form Submission",
-  //     });
-  //     console.log("Email sent successfully:", message);
-
-  //     // Clear the form after successful submission
-  //     setFormData({
-  //       name: "",
-  //       email: "",
-  //       project: "",
-  //       message: "",
-  //     });
-
-  //     alert("Message sent successfully!");
-  //   } catch (err) {
-  //     console.error("Error sending email:", err);
-  //     alert("Failed to send message. Please try again later.");
-  //   }
-  // };
+  const handleSubmit = async (e) => {
+    // e.preventDefault();
+    // alert("Message sent successfully!");
+    // }
+  };
 
   return (
     <>
@@ -120,20 +75,21 @@ export default function Contact() {
           </div>
 
           <div>
-            <form >
+            <form onSubmit={handleSubmit}>
               <div className="mb-10 flex flex-col lg:flex lg:flex-row gap-5 lg:gap-6 lg:items-center">
                 <input
                   type="text"
                   className="p-3 rounded-lg lg:w-72 outline-none"
                   placeholder="Name"
                   // value={formData.name}
-                  // onChange={handleChange}
+                  onChange={handleChange}
                 />
                 <input
                   type="email"
                   required
                   className="lg:w-72 rounded-lg outline-none p-3"
                   placeholder="Email"
+                  // value={formData.email}
                 />
               </div>
 
@@ -142,6 +98,8 @@ export default function Contact() {
                   placeholder="Project"
                   className="w-full rounded-lg p-3 outline-none"
                   rows="3"
+                  // value={formData.project}
+                  onChange={handleChange}
                 ></textarea>
               </div>
 
@@ -150,6 +108,8 @@ export default function Contact() {
                   className="w-full outline-none rounded-lg mb-3 p-3"
                   rows="6"
                   placeholder="Message"
+                  // value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
               </div>
 

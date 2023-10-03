@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Link } from "react-router-dom";
 
 // import required modules
-import { Navigation,Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 export const portfolioData = [
   {
@@ -18,7 +18,7 @@ export const portfolioData = [
     title: "Trabook",
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions for a travel booking website for easy bookings and accomodations",
-    link: "https://trabookvac.netlify.app/",
+    link: "https://trabook-nu.vercel.app/",
   },
   {
     id: 1,
