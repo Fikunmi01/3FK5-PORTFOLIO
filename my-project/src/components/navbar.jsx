@@ -1,5 +1,13 @@
 import React from "react";
 import Navlinks from "./navlinks";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 export const Navbar = () => {
   const [navIcon, setNavicon] = React.useState(false);
@@ -30,12 +38,40 @@ export const Navbar = () => {
         ) : (
           <div className="relative hidden lg:block">
             <ul className="flex gap-8">
-              <li>Home</li>
-              <li>About</li>
-              <li>Skills</li>
-              <li>Services</li>
-              <li>Portfolio</li>
-              <li>Contact Me</li>
+              <li className="cursor-pointer">
+                <Link to="/" spy={true} smooth={true} duration={500}>
+                  Home
+                </Link>
+              </li>
+
+              <li className="cursor-pointer">
+                <Link to="section1" spy={true} smooth={true} duration={500}>
+                  About
+                </Link>
+              </li>
+              <li  className="cursor-pointer">
+                <Link to="section2" spy={true} smooth={true} duration={500}>
+                  Skills
+                </Link>
+              </li>
+
+              <li className="cursor-pointer">
+                <Link to="section3" spy={true} smooth={true} duration={500}>
+                  Service
+                </Link>
+              </li>
+
+              <li className="cursor-pointer">
+                <Link to="section4" spy={true} smooth={true} duration={500}>
+                  Portfolio
+                </Link>
+              </li>
+
+              <li className="cursor-pointer">
+                <Link to="section5" spy={true} smooth={true} duration={500}>
+                  Contact Me
+                </Link>
+              </li>
             </ul>
           </div>
         )}

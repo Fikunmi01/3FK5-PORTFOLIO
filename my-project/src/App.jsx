@@ -13,21 +13,52 @@ import { Qualifications } from "./components/qualifications";
 import { Services } from "./components/services";
 import { Skills } from "./components/skills";
 import Testimonial from "./components/testimonial";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 
 function App() {
   return (
-      <div className="min-h-full relative">
-        <Navbar />
+    <div className="min-h-full relative">
+      <Navbar />
+
+      <Element name="section1" className="section">
         <Hero />
+      </Element>
+
+      <Element name="section2" className="section">
         <Skills />
-        {/* <Qualifications /> */}
+      </Element>
+
+      {/* <Qualifications /> */}
+
+      <Element name="section3" className="section">
         <Services />
+      </Element>
+
+      <Element name="section4" className="section">
         <Portfolio />
+      </Element>
+
+      <Element name="section5" className="section">
         <Cta />
+      </Element>
+
+      <Element name="section6" className="section">
         <Testimonial />
+      </Element>
+
+      <Element name="section7" className="section">
         <Contact />
-        <Footer />
-      </div>
+      </Element>
+
+      <Footer />
+    </div>
   );
 }
 

@@ -43,7 +43,7 @@ export default function Contact() {
               <div>
                 <h3 className="font-bold text-[#102438] text-lg lg:text-xl">Location</h3>
                 <p className="text-lg lg:text-xl text-[#9FA1AD]">
-                  Peru - Lima Av.Bolivar #123
+                  Akure
                 </p>
               </div>
             </div>
