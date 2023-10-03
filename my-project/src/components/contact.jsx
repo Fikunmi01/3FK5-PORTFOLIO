@@ -1,25 +1,15 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    project: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    // const { name, value } = e.target;
-    setFormData({
-      ...formData,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    // e.preventDefault();
-    // alert("Message sent successfully!");
-    // }
-  };
-
+  const [state, handleSubmit] = useForm("xbjvpazg");
+  if (state.succeeded) {
+    return (
+      <p className="text-center">
+        Thanks for contacting me, I'll get back to you shortly!
+      </p>
+    );
+  }
   return (
     <>
       <div className="lg:py-20 lg:px-24 bg-[#e3f0fc] font-kalam">
@@ -81,15 +71,26 @@ export default function Contact() {
                   type="text"
                   className="p-3 rounded-lg lg:w-72 outline-none"
                   placeholder="Name"
-                  // value={formData.name}
-                  onChange={handleChange}
+                  id="name"
+                  name="name"
+                />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
                 />
                 <input
                   type="email"
+                  id="email"
+                  name="email"
                   required
                   className="lg:w-72 rounded-lg outline-none p-3"
                   placeholder="Email"
-                  // value={formData.email}
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
 
@@ -98,9 +99,14 @@ export default function Contact() {
                   placeholder="Project"
                   className="w-full rounded-lg p-3 outline-none"
                   rows="3"
-                  // value={formData.project}
-                  onChange={handleChange}
+                  id="project"
+                  name="project"
                 ></textarea>
+                <ValidationError
+                  prefix="Project"
+                  field="project"
+                  errors={state.errors}
+                />
               </div>
 
               <div>
@@ -108,13 +114,22 @@ export default function Contact() {
                   className="w-full outline-none rounded-lg mb-3 p-3"
                   rows="6"
                   placeholder="Message"
-                  // value={formData.message}
-                  onChange={handleChange}
+                  id="message"
+                  name="message"
                 ></textarea>
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
 
               <div>
-                <button className="boxShadow mb-10 p-3 rounded-lg bg-[#102438] text-white text-xl">
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="boxShadow mb-10 p-3 rounded-lg bg-[#102438] text-white text-xl"
+                >
                   Send Message <i className="uil uil-message"></i>
                 </button>
               </div>
