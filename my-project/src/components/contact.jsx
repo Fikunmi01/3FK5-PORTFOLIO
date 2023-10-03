@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Contact() {
+  
   return (
     <>
       <div className="lg:py-20 lg:px-24 bg-[#e3f0fc] font-kalam">
