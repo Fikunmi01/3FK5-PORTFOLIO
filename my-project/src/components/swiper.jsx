@@ -14,11 +14,11 @@ import { Navigation, Pagination } from "swiper";
 export const portfolioData = [
   {
     id: 0,
-    img: "/assets/portfolioImg1.jpg",
+    img: "/assets/ecoHaven.png",
     title: "Trabook",
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions for a travel booking website for easy bookings and accomodations",
-    link: "https://trabook-nu.vercel.app/",
+    link: "https://eco-haven.vercel.app/",
   },
   {
     id: 1,
@@ -35,6 +35,30 @@ export const portfolioData = [
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions",
     link: "https://pixelab-angular.vercel.app/",
+  },
+  {
+    id: 3,
+    img: "/assets/salty.png",
+    title: "Salty",
+    jobDescription:
+      "Website Adapatable to all devices, with UI components and animated interactions",
+    link: "https://salty-typescript.vercel.app/",
+  },
+  {
+    id: 4,
+    img: "/assets/boldo.png",
+    title: "Boldo",
+    jobDescription:
+      "Website Adapatable to all devices, with UI components and animated interactions",
+    link: "https://boldo-chi.vercel.app/",
+  },
+  {
+    id: 5,
+    img: "/assets/salty.png",
+    title: "Duplicate Remover",
+    jobDescription:
+      "Website Adapatable to all devices, with UI components and animated interactions",
+    link: "https://laughing-octo-engine.vercel.app/",
   },
 ];
 
