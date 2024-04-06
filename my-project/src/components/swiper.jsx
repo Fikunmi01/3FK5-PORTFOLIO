@@ -15,7 +15,7 @@ export const portfolioData = [
   {
     id: 0,
     img: "/assets/ecoHaven.png",
-    title: "Trabook",
+    title: "EcoHaven",
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions for a travel booking website for easy bookings and accomodations",
     link: "https://eco-haven.vercel.app/",
@@ -54,7 +54,7 @@ export const portfolioData = [
   },
   {
     id: 5,
-    img: "/assets/salty.png",
+    img: "/assets/duplicateCharacter.png",
     title: "Duplicate Remover",
     jobDescription:
       "Website Adapatable to all devices, with UI components and animated interactions",
