@@ -39,14 +39,14 @@ export const Hero = () => {
             producing quality work
           </p>
 
-          <button className="px-6 text-xl py-3 rounded-md mb-6 lg:mb-12 bg-[#102438] text-white">
-            <Links to="section5" spy={true} smooth={true} duration={500}>
+          <Links to="section5" spy={true} smooth={true} duration={500}>
+            <button className="px-6 text-xl py-3 rounded-md mb-6 lg:mb-12 bg-[#102438] text-white">
               Contact Me <i className="uil uil-navigator"></i>
-            </Links>
-          </button>
+            </button>
+          </Links>
 
-          <div className="text-lg flex gap-2 items-center mb-2">
-            <i className="uil uil-mouse-alt text-2xl"></i>
+          <div className="text-lg flex gap-2 items-center mb-2 animate-scroll-bounce">
+            <i className="uil scroll-bounce uil-mouse-alt text-2xl "></i>
             <p>Scroll down</p>
           </div>
         </div>

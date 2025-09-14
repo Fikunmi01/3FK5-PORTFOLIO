@@ -8,7 +8,6 @@ import {
   scroller,
 } from "react-scroll";
 
-
 export const Cta = () => {
   return (
     <div className="w-full flex justify-center px-3 py-10 lg:py-20 lg:px-24 font-kalam">
@@ -21,13 +20,13 @@ export const Cta = () => {
             Send me a message! I'm eager to hear from you and explore how we can
             collaborate to bring your ideas to life.
           </p>
-          <button className="boxShadow px-3 rounded-xl bg-[#102438] flex gap-2 text-white text-sm py-3 lg:text-xl lg:py-4">
-            {/* Contact Me */}
-            <Link to="section7" spy={true} smooth={true} duration={500}>
+          <Link to="section7" spy={true} smooth={true} duration={500}>
+            <button className="boxShadow px-3 rounded-xl bg-[#102438] flex gap-2 text-white text-sm py-3 lg:text-xl lg:py-4">
+              {/* Contact Me */}
               Contact Me
-            </Link>
-            <i className="uil uil-navigator lg:text-xl"></i>
-          </button>
+              <i className="uil uil-navigator lg:text-xl"></i>
+            </button>
+          </Link>
         </div>
         <div>
           <img src="/assets/Humaans.png" alt="" />
